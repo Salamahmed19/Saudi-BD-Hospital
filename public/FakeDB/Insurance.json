@@ -1,0 +1,50 @@
+[
+  {
+    "Id":1,
+    "Name": "Bupa",
+    "Img": "https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Bupa_logo.svg/1200px-Bupa_logo.svg.png",
+    "Start": "01 Aug 2021",
+    "End": "01 Aug 2020 ",
+    "Des": "Bupa is an international health insurance and healthcare group with over 31 million customers worldwide. Bupa's origins and global headquarters are in the United Kingdom."
+  },
+  {
+    "Id":2,
+    "Name": "Walaa",
+    "Img": "https://argaamplus.s3.amazonaws.com/cd3d8a3c-2efc-4783-8390-2e13c5bd36a8.png",
+    "Start": "01 Aug 2021",
+    "End": "01 Aug 2020 ",
+    "Des": "Walaa Cooperative Insurance Company SJSC, formerly Saudi United Cooperative Insurance Co SJSC, is a Saudi Arabia-based insurance and reinsurance company."
+  },
+  {
+    "Id":3,
+    "Name": "Tawuniya",
+    "Img": "http://img0cf.b8cdn.com/images/logo/03/90203_logo_1462370936_n.png",
+    "Start": "01 Aug 2021",
+    "End": "01 Aug 2020 ",
+    "Des": "Tawuniya is the first national insurance company licensed in the Kingdom of Saudi Arabia to practice all types of insurance business in accordance , advacanced."
+  },
+  {
+    "Id":4,
+    "Name": "MEDGULF",
+    "Img": "https://magrabiwebsite.s3-accelerate.amazonaws.com/2018/09/1538646475_582_15477_medgulf.png",
+    "Start": "01 Aug 2021",
+    "End": "01 Aug 2020 ",
+    "Des": "We take pride in ourselves being the first group health insurance provider in the Kingdom. Based on our experience, we provide various insurance documents."
+  },
+  {
+    "Id":5,
+    "Name": "Gulf Union",
+    "Img": "https://namaazone.com/uploads/users/477/2bd7c8371cbccc51bd4542753f026175.jpg",
+    "Start": "01 Aug 2021",
+    "End": "01 Aug 2020 ",
+    "Des": "A leading insurance provider to cover your health, car, home, travel, business and more. Get your quote. Renew your insurance policies in an easy and."
+  },
+  {
+    "Id":6,
+    "Name": "Al Alamiya",
+    "Img": "https://argaamplus.s3.amazonaws.com/bffe67ea-1371-4e6a-97df-52ce6ef843a4.png",
+    "Start": "01 Aug 2021",
+    "End": "01 Aug 2020 ",
+    "Des": "Al Alamiya Cooperative Insurance Co intends to apply for a license to sell property, marine, vehicle, medical, accident, and engineering insurance."
+  }
+]

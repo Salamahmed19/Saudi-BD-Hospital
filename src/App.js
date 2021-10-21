@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SiteNavbar from './Components/SiteNavbar/SiteNavbar';
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Home/Home';
+import Insurances from './Components/Insurances/Insurances';
+import Doctors from './Components/Doctors/Doctors';
+import AboutUs from './Components/AboutUs/AboutUs';
+import Services from './Components/Services/Services';
+import NotFound from './Components/NotFound/NotFound';
+import SignIn from './Components/SignIn/SignIn';
+import Booking from './Components/Booking/Booking';
+import AuthProvider from './contexts/AuthProvider';
+import SignUp from './Components/SignUp/SignUp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <SiteNavbar/>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/booking/:servicesId">
+            <Booking></Booking>
+          </Route>
+          <Route path="/insurances">
+            <Insurances></Insurances>
+          </Route>
+          <Route path="/doctors">
+            <Doctors></Doctors>
+          </Route>
+          <Route path="/aboutus">
+            <AboutUs></AboutUs>
+          </Route>
+          <Route path="/signin">
+            <SignIn></SignIn>
+          </Route>
+          <Route path="/signup">
+            <SignUp></SignUp>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+        <Footer/>
+      </Router>
+    </AuthProvider>
   );
 }
 

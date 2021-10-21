@@ -1,0 +1,44 @@
+[
+    {
+      "Id":1,
+      "Name": "Dr. Omer Tipu, MD",
+      "Img": "https://www.freepnglogos.com/uploads/doctor-png/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3.png",
+      "Age": 32,
+      "Specialist": "Dr. Omer Tipu, MD is a Family Medicine Specialist in Brooklyn, NY.  He is affiliated with Brooklyn Hospital Center Downtown.  He has indicated that he accepts telehealth appointments.  Be sure to call ahead with Dr. Tipu to book an appointment."
+    },
+    {
+      "Id":2,
+      "Name": "Dr. Lyudmila Dekhovich, DO",
+      "Img": "https://www.freepnglogos.com/uploads/doctor-png/png-woman-doctor-transparent-woman-doctor-images-40.png",
+      "Age": "24",
+      "Specialist": "Dr. Lyudmila Dekhovich, DO is a Family Medicine Specialist in Brooklyn, NY.  She is affiliated with medical facilities such as NYU Langone Health Tisch Hospital and NYU Langone Health Tisch Hospital.  She is accepting new patients and has indicated that she accepts telehealth appointments."
+    },
+    {
+      "Id":3,
+      "Name": "Dr. Joan Stroud, MD",
+      "Img": "https://www.freepnglogos.com/uploads/doctor-png/png-woman-doctor-transparent-woman-doctor-images-37.png",
+      "Age": "28",
+      "Specialist": "Dr. Joan Stroud, MD is a Family Medicine Specialist in Brooklyn, NY.  She is affiliated with medical facilities such as NYU Langone Hospital - Brooklyn and NYU Langone Health Tisch Hospital.  She is accepting new patients and has indicated that she accepts telehealth appointments."
+    },
+    {
+      "Id":4,
+      "Name": "Dr. Jonathan Eckstein, DO",
+      "Img": "https://www.freepnglogos.com/uploads/doctor-png/dentist-doctor-bhubaneswar-medical-doctor-36.png",
+      "Age": "26",
+      "Specialist": "Dr. Jonathan Eckstein, DO is a Family Medicine Specialist in Howard Beach, NY.  He is affiliated with medical facilities such as NYU Langone Health Tisch Hospital and NYU Langone Hospital—Long Island.  He is accepting new patients and has indicated that he accepts telehealth appointments."
+    },
+    {
+      "Id":5,
+      "Name": "Dr. Salvatore Pisciotto, DO",
+      "Img": "https://www.freepnglogos.com/uploads/doctor-png/expert-male-doctor-cartoon-vector-character-aka-isaac-29.png",
+      "Age": "29",
+      "Specialist": "Dr. Salvatore Pisciotto, DO is a Family Medicine Specialist in Glendale, NY.  He is affiliated with medical facilities such as NYU Langone Health Tisch Hospital and NYU Langone Hospital—Long Island.  He is accepting new patients.  Be sure to call ahead with Dr. Pisciotto to book an appointment."
+    },
+    {
+      "Id":6,
+      "Name": "Dr. Reno Discala, MD",
+      "Img": "https://www.freepnglogos.com/uploads/doctor-png/doctor-caricature-cartoon-image-pixabay-38.png",
+      "Age": "39",
+      "Specialist": "Dr. Reno Discala, MD is a Family Medicine Specialist in Astoria, NY.  He is affiliated with medical facilities such as NYU Langone Health Tisch Hospital and NYU Langone Health Tisch Hospital.  He is accepting new patients and has indicated that he accepts telehealth appointments."
+    }
+  ]
