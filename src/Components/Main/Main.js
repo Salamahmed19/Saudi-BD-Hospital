@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Doctors from '../Doctors/Doctors';
 import Insurances from '../Insurances/Insurances';
+import Products from '../Products/Products';
 import Services from '../Services/Services';
 
 const Main = () => {
@@ -24,7 +25,7 @@ const Main = () => {
         <Container>
             <div className="mt-5">
                     <h2 className="text-center">Look at our pharmacy products</h2>
-                    
+                    <Products></Products>
                 </div>
             </Container>
         </>

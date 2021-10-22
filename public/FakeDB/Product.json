@@ -1,0 +1,38 @@
+[
+    {
+      "Id":1,
+      "Name": "Face Mask",
+      "Img": "https://media.wired.com/photos/613a905fa755c6a4b550ba89/master/w_320%2Cc_limit/Gear-Face-Mask.jpg",
+      "Price": 10
+    },
+    {
+      "Id":2,
+      "Name": "Wheel chair",
+      "Img": "https://lirp.cdn-website.com/d1d87671/dms3rep/multi/opt/Wheelchair-home1-480w.png",
+      "Price": 110
+    },
+    {
+      "Id":3,
+      "Name": "Gluco Meter",
+      "Img": "https://post.healthline.com/wp-content/uploads/2020/09/3457-glucometer_finger-732x549-thumbnail-732x549.jpg",
+      "Price": 210
+    },
+    {
+      "Id":4,
+      "Name": "Pressure Meter",
+      "Img": "https://media-ecn.s3.amazonaws.com/embedded_image/2017/01/170105-Blood%20Pressure%20Checking%20Device.jpg",
+      "Price": 105
+    },
+    {
+      "Id":5,
+      "Name": "Crutch",
+      "Img": "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1648298.jpg",
+      "Price": 40
+    },
+    {
+      "Id":6,
+      "Name": "umbilical hernia belt",
+      "Img": "https://m.media-amazon.com/images/I/81tmM0nIbeL._AC_SL1500_.jpg",
+      "Price": 310
+    }
+  ]

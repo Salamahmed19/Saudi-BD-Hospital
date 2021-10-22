@@ -4,7 +4,7 @@
       "Name": "Short-term hospitalization",
       "Img": "https://www.innerchange.com/wp-content/uploads/2016/08/iStock_83360629_cropped.jpg",
       "Price": 100,
-      "Des": "Short-term inpatient hospitalization may be the right choice to help your loved one in an emergency. Short-term inpatient hospitalization is best for clients who are at immediate risk of harming themselves or others or who are experiencing severe psychosis.."
+      "Des": "Short-term inpatient hospitalization may be the right choice to help your loved one in an emergency. Short-term inpatient hospitalization is best for clients who are at immediate risk of harming themselves."
     },
     {
       "Id":2,
@@ -15,10 +15,10 @@
     },
     {
       "Id":3,
-      "Name": "general and specialty surgical services",
+      "Name": "general  surgical services",
       "Img": "https://www.specialty-hospital.com/uploads/images/services/1/174_49.JPG",
       "Price": 150,
-      "Des": "General surgery is a discipline that requires knowledge of and responsibility for the preoperative, operative, and postoperative management of patients with a broad spectrum of diseases, including those which may require nonoperative, elective, or emergency surgical treatment."
+      "Des": "General surgery is a discipline that requires knowledge and postoperative management of patients with a broad spectrum of diseases, including those which may require nonoperative or emergency surgical treatment."
     },
     {
       "Id":4,
@@ -32,13 +32,13 @@
       "Name": "laboratory services",
       "Img": "https://dlslab.com/wp-content/uploads/2021/02/dls-central-lab-headquarters.jpg",
       "Price": 250,
-      "Des": "Diagnostic Laboratory Services, Inc. (DLS) is Hawaii’s largest locally owned and operated medical and clinical testing laboratory. With over 50 Patient Service Centers, we are proud to provide quality services throughout Hawaii, Guam and Saipan! Please see our COVID-19 Testing Site List."
+      "Des": "Diagnostic Laboratory Services, Inc. (DLS) is Hawaii’s largest locally owned and operated medical and clinical testing laboratory. With over 50 Patient Service Centers, we are proud to provide quality services throughout Hawaii, Guam and Saipan!."
     },
     {
       "Id":6,
       "Name": "blood services",
       "Img": "https://digital.hbs.edu/platform-rctom/wp-content/uploads/sites/4/2017/11/image-1-460x200.jpeg",
       "Price": "Free",
-      "Des": "Every two seconds, someone in the U.S. needs blood. This could be a little girl in the ICU or a mother with Stage 3 leukemia. If you’re worried about needles, don’t be—most blood donors compare the experience to a mild, split-second pinch! The entire process is very safe and very fast, and you will feel amazing knowing you potentially saved up to three people."
+      "Des": "Every two seconds, someone in the U.S. needs blood. This could be a little girl in the ICU or a mother with Stage 3 leukemia. If you’re worried about needles, don’t be—most blood donors compare the experience to a mild, split-second pinch!."
     }
   ]

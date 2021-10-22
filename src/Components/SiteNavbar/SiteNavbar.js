@@ -21,8 +21,8 @@ const SiteNavbar = () => {
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
                 {user?.email ? <span>Hello: {user?.displayName}</span> :
-                <div className="d-flex"><Nav.Link as={Link} to="/signin">SignIn</Nav.Link><Nav.Link as={Link} to="/signup">SignUp</Nav.Link></div>}
-                {user?.email && <Button onClick={logOut}>Sign Out</Button>}
+                <div className="d-flex"><Nav.Link className="btn btn-primary text-white me-3" as={Link} to="/signup">Sign Up</Nav.Link></div>}
+                {user?.email ? <Button className="ms-2" onClick={logOut}>Sign Out</Button> : <Nav.Link className="btn btn-primary text-white" as={Link} to="/signin">Sign In</Nav.Link>}
                 </Navbar.Collapse>
            </Container>
         </Navbar>

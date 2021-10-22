@@ -16,9 +16,9 @@ const Footer = () => {
                 </div>
             </Container>
             <Container className="d-flex justify-content-between align-items-center">
-                <img style={{width:"120px"}} src="https://i.ibb.co/9wM7jvg/flag.png"/>
+                <img style={{width:"120px"}} src="https://i.ibb.co/9wM7jvg/flag.png" alt="Bangladesh"/>
                 <p>Copyright ©2021 All Rights Reserved.</p>
-                <p><small>Terms of use</small><small>Privacy policy</small></p>
+                <p className="external-link"><a href="/">Terms of use</a><a href="/" className="ms-3">Privacy policy</a></p>
             </Container>
         </div>
     );
