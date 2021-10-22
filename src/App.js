@@ -11,6 +11,7 @@ import SignIn from './Components/SignIn/SignIn';
 import Booking from './Components/Booking/Booking';
 import AuthProvider from './contexts/AuthProvider';
 import SignUp from './Components/SignUp/SignUp';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
           <Route path="/services">
             <Services></Services>
           </Route>
-          <Route path="/booking/:servicesId">
+          <PrivateRoute path="/booking/:servicesId">
             <Booking></Booking>
-          </Route>
+          </PrivateRoute>
           <Route path="/insurances">
             <Insurances></Insurances>
           </Route>

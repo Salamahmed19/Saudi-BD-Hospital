@@ -11,6 +11,7 @@ const useFirebase = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -55,6 +56,7 @@ const useFirebase = () => {
     }
   
     const processLogin = (email, password) => {
+      setIsLoading(true);
       signInWithEmailAndPassword(auth, email, password)
         .then(result => {
           setUser(result.user);
@@ -63,9 +65,11 @@ const useFirebase = () => {
         .catch(error => {
           setError(error.message);
         })
+        .finally(() => setIsLoading(false));
     }
   
     const registerNewUser = (email, password) => {
+      setIsLoading(true);
       createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
           setUser(result.user);
@@ -75,6 +79,7 @@ const useFirebase = () => {
         .catch(error => {
           setError(error.message);
         })
+        .finally(() => setIsLoading(false));
     }
   
     const setUserName = () => {
@@ -83,41 +88,50 @@ const useFirebase = () => {
     }
 
     const signInUsingGoogle = () => {
+        setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user);
             })
+            .finally(() => setIsLoading(false));
     }
 
     const signInUsingGithub = () => {
+        setIsLoading(true);
         signInWithPopup(auth, githubProvider)
             .then(result => {
                 setUser(result.user);
             })
+            .finally(() => setIsLoading(false));
     }
 
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 setUser({});
-            });
+            })
+            .finally(() => setIsLoading(false));
     }
 
     useEffect(() => {
-        onAuthStateChanged(auth, user => {
+        const unsubscribed = onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user);
             }
             else{
                 setUser({})
             }
+            setIsLoading(false);
         })
+        return () => unsubscribed;
     }, []);
 
     return {
         user,
         name,
         error,
+        isLoading,
         signInUsingGoogle,
         signInUsingGithub,
         logOut,
