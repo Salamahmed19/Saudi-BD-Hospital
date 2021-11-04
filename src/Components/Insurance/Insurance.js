@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 
 const Insurance = (props) => {
     const {Img, Des, Name, Start, End } = props.insurance
     return (
-        <div className="col-md-4">
+        <Col md={4} sm={12}>
             <Card className="shadow radious" style={{ width: '18rem'}}>
                     <Card.Img className="p-3" style={{ height:"15rem"}} variant="top" src={Img} />
                     <Card.Body>
@@ -13,7 +13,7 @@ const Insurance = (props) => {
                     <Card.Text>{Des}</Card.Text>
                     </Card.Body>
             </Card>
-        </div>
+        </Col>
     );
 };
 

@@ -1,6 +1,4 @@
 .bg-color{
     background-color: rgb(215, 229, 238);
-}
-.external-link a{
-    text-decoration: none;
+    line-height: 40px;
 }

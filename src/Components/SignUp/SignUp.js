@@ -41,7 +41,7 @@ const SignUp = () => {
 
     return (
         <Container>
-            <Row className="justify-content-md-center my-5 p-2">
+            <Row className="justify-content-center my-5 p-2">
                 <Col md={6} sm={12}>
                     <form onSubmit={handleUserLogin}>
                         <h3 className="mb-5">User Registration Form</h3>
@@ -69,7 +69,7 @@ const SignUp = () => {
                     </form>
                 </Col>
             </Row>
-            <Row className="justify-content-md-center">
+            <Row className="justify-content-center mb-5">
                 <Col md={6} sm={12}>
                     <Button onClick={handleGoogleLogin}>Google Sign In</Button>
                     <Button className="ms-3" onClick={handleGitHubLogin}>GitHub Sign In</Button>

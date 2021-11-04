@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Insurance from '../Insurance/Insurance';
 
 const Insurances = () => {
@@ -11,11 +11,11 @@ const Insurances = () => {
     },[])
     return (
         <Container className="my-5">
-            <div className="row g-5">
+            <Row className="my-5 g-4">
             {
                 insurance.map(insurance => <Insurance insurance={insurance} key={insurance.Id}></Insurance>)
             }
-            </div>
+            </Row>
         </Container>
     );
 };

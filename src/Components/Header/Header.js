@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Container } from 'react-bootstrap';
 import "./Header.css"
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
       setIndex(selectedIndex);
     };
     return (
-        <div className="bg-color">
+        <Container>
           <Carousel className="container" activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item className="my-5">
               <img
@@ -51,7 +51,7 @@ const Header = () => {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-        </div>
+        </Container>
     );
 };
 export default Header;
