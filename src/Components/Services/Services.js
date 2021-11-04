@@ -3,17 +3,17 @@ import { Container, Row } from 'react-bootstrap';
 import Service from '../Service/Service';
 
 const Services = () => {
-    const [service, setService] = useState([]);
+    const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch("./FakeDB/Service.json")
+        fetch("/FakeDB/Service.json")
         .then(res => res.json())
-        .then(data => setService(data))
+        .then(data => setServices(data))
     }, [])
     return (
         <Container>
             <Row className="my-5 g-5">
             {
-                service.map(service => <Service service={service} key={service.Id}></Service>)
+                services.map(service => <Service service={service} key={service.Id}></Service>)
             }
             </Row>
         </Container>

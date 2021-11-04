@@ -12,7 +12,7 @@ const Service = (props) => {
                     <Card.Title>{Name}</Card.Title>
                     <Card.Text>Price : {Price} Riyals</Card.Text>
                     <Card.Text>{Des}</Card.Text>
-                    <Link to={`/booking/${Id}`}><Button className="ms-4">Book Now (30% Off)</Button></Link>
+                    <Link to={`/booking/${Id}`}><Button className="ms-4">Book Now (20% Off)</Button></Link>
                     </Card.Body>
             </Card>
         </div>

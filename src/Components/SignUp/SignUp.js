@@ -1,15 +1,50 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
+import { useHistory, useLocation } from "react-router";
 
 const SignUp = () => {
-    const { handleEmailChange, handleNameChange, error, handleRegistration, handlePasswordChange, signInUsingGoogle, signInUsingGithub } = useAuth();
+    const { handleEmailChange, handleNameChange, error, setError, setUser, setUserName, handleRegistration, handlePasswordChange, signInUsingGoogle, signInUsingGithub } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+    
+
+    const handleGoogleLogin = () =>{
+        signInUsingGoogle()
+        .then(result => {
+            setUser(result.user);
+            history.push(redirect_uri);
+        })
+    };
+
+    const handleGitHubLogin = () =>{
+        signInUsingGithub()
+        .then(result => {
+            setUser(result.user);
+            history.push(redirect_uri);
+        })
+    };
+    
+
+    const handleUserLogin = () =>{
+        handleRegistration()
+        .then(result => {
+            setUser(result.user);
+            history.push(redirect_uri);
+            setError('');
+            setUserName();
+          })
+    };
+
     return (
         <Container>
-            <Row className="m-5">
-                <Col className="m-5">
-                    <form onSubmit={handleRegistration}>
-                        <h3 className="mb-5">Sign Up</h3>
+            <Row className="justify-content-md-center my-5 p-2">
+                <Col md={6} sm={12}>
+                    <form onSubmit={handleUserLogin}>
+                        <h3 className="mb-5">User Registration Form</h3>
                         <div className="row mb-3">
                         <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
                         <div className="col-sm-10">
@@ -33,10 +68,11 @@ const SignUp = () => {
 
                     </form>
                 </Col>
-                <Col className="my-5 p-5">
-                    <Button onClick={signInUsingGoogle}>Google Sign In</Button>
-                    <br />
-                    <Button onClick={signInUsingGithub} className="mt-5">GitHub Sign In</Button>
+            </Row>
+            <Row className="justify-content-md-center">
+                <Col md={6} sm={12}>
+                    <Button onClick={handleGoogleLogin}>Google Sign In</Button>
+                    <Button className="ms-3" onClick={handleGitHubLogin}>GitHub Sign In</Button>
                 </Col>
             </Row>
         </Container>
